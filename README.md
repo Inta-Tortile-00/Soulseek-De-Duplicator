@@ -7,7 +7,7 @@ Simply install plugin via Nicotine's Settings and install contained ZIP file.
 
 Send yourself a message on Nicotine+ for commands to work in private as a pro-tip. (although they should work fine in any input buffer like chat, etc.)
 
-AI generated for this codebase, I decided to do this way for simplicity sake, and it doesn't delete files AT ALL but outputs it as CSV file once finished (`%APPDATA%\nicotine`)
+AI generated for this codebase, I decided to do this way for simplicity sake, and it doesn't delete files AT ALL but outputs it as TSV file once finished (`%APPDATA%\nicotine`)
 
 
 OFFICIAL README.MD:
