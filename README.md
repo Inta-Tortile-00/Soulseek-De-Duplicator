@@ -58,7 +58,7 @@ I suggest using the flexible resolution (Visidata) that requires pip3 and Python
 For example on Windows or other possible platforms, once installed: 
 run `vd C:\Users\XXXX\AppData\Roaming\nicotine\plugins\soulseek_deduplicator\dedupe-report-YYYYMMXX-XXXXX.tsv`
 
-Make sure terminal runs full screen (ALT+F4) as a suggested pro-tip!
+Make sure terminal runs full screen (ALT+ENTER) as a suggested pro-tip!
 
 ## Install
 
@@ -97,6 +97,21 @@ Review groups manually before taking any filesystem action.
 ## v0.1.1
 
 Fixed Nicotine+ 3.3.x command callback binding (`callback(args)`).
+
+## v0.2.0
+
+2. Reading the ASCII chart
+Symbol	Meaning
+B	Beginning sample
+M	Middle sample
+E	End sample
+#	One filled segment, approximately 10%
+.	One unfilled segment
+N/A	Sample not applicable, such as for a small file
+
+The percentages represent the proportion of bytes that match at the same positions within each sample window. They are not a measure of perceptual similarity for audio, images, or video.
+
+The first file in each duplicate group is the reference; subsequent files are compared against it.
 
 ## v0.1.2
 
