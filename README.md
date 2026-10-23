@@ -1,4 +1,4 @@
-# Soulseek De-Duplicator for Nicotine+ — v0.1.1
+# Soulseek De-Duplicator for Nicotine+ — v0.2.0
 A special designed and reliable tool for finding duplicated files, and removing them safely using Nicotine+ plugin system.
 
 It runs fluently using low priority threads. Granted, you can still use Nicotine+ while it scans (a ~5TB library can take 2-3 hours depending on speed of system.)
@@ -98,6 +98,13 @@ Review groups manually before taking any filesystem action.
 
 Fixed Nicotine+ 3.3.x command callback binding (`callback(args)`).
 
+
+## v0.1.2
+
+Fixed command callbacks invoked from private chat. Nicotine+ supplies command
+context as keyword arguments (for example `user=...`), so `_command` now accepts
+`user`, `room`, and future extra keyword arguments.
+
 ## v0.2.0
 ```
 2. Reading the ASCII chart
@@ -112,9 +119,3 @@ N/A	   Sample not applicable, such as for a small file
 The percentages represent the proportion of bytes that match at the same positions within each sample window. They are not a measure of perceptual similarity for audio, images, or video.
 
 The first file in each duplicate group is the reference; subsequent files are compared against it.
-
-## v0.1.2
-
-Fixed command callbacks invoked from private chat. Nicotine+ supplies command
-context as keyword arguments (for example `user=...`), so `_command` now accepts
-`user`, `room`, and future extra keyword arguments.
