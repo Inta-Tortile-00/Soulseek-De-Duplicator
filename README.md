@@ -51,6 +51,15 @@ The fallback requires no third-party package.
 The scan runs on a background thread so the Nicotine+ UI remains responsive.
 Progress and final results are written to the Nicotine+ log.
 
+## Parsing TSV files ready-made options:
+Since parsing data can be difficult, there are many TSV viewers for UNIX/Windows/OS X including Bash scripts that delimit fields (IFS) vs more flexible approaches.
+I suggest using the flexible resolution (Visidata) that requires pip3 and Python 3.x.x as well. Can be found here: https://www.visidata.org/install/
+
+For example on Windows or other possible platforms, once installed: 
+run `vd C:\Users\XXXX\AppData\Roaming\nicotine\plugins\soulseek_deduplicator\dedupe-report-YYYYMMXX-XXXXX.tsv`
+
+Make sure terminal runs full screen (ALT+F4) as a suggested pro-tip!
+
 ## Install
 
 Nicotine+ 3.3.x:
